@@ -36,6 +36,8 @@
             clearButton = new Button();
             backgroundButton = new Button();
             closeButton = new Button();
+            openFileDialog1 = new OpenFileDialog();
+            colorDialog1 = new ColorDialog();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
@@ -137,6 +139,13 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += button4_Click;
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*";
+            openFileDialog1.Title = "Select a picture file";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -164,5 +173,7 @@
         private Button clearButton;
         private Button backgroundButton;
         private Button closeButton;
+        private OpenFileDialog openFileDialog1;
+        private ColorDialog colorDialog1;
     }
 }
