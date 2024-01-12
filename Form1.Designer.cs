@@ -30,7 +30,7 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             pictureBox1 = new PictureBox();
-            checkBox1 = new CheckBox();
+            stretchCheckBox = new CheckBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
             showButton = new Button();
             clearButton = new Button();
@@ -49,7 +49,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85F));
             tableLayoutPanel1.Controls.Add(pictureBox1, 0, 0);
-            tableLayoutPanel1.Controls.Add(checkBox1, 0, 1);
+            tableLayoutPanel1.Controls.Add(stretchCheckBox, 0, 1);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 1, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
@@ -73,15 +73,16 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // checkBox1
+            // stretchCheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(3, 549);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(63, 19);
-            checkBox1.TabIndex = 1;
-            checkBox1.Text = "Stretch";
-            checkBox1.UseVisualStyleBackColor = true;
+            stretchCheckBox.AutoSize = true;
+            stretchCheckBox.Location = new Point(3, 549);
+            stretchCheckBox.Name = "stretchCheckBox";
+            stretchCheckBox.Size = new Size(63, 19);
+            stretchCheckBox.TabIndex = 1;
+            stretchCheckBox.Text = "Stretch";
+            stretchCheckBox.UseVisualStyleBackColor = true;
+            stretchCheckBox.CheckedChanged += stretchCheckBox_CheckedChanged;
             // 
             // flowLayoutPanel1
             // 
@@ -105,7 +106,7 @@
             showButton.TabIndex = 0;
             showButton.Text = "Show a picture";
             showButton.UseVisualStyleBackColor = true;
-            showButton.Click += button1_Click;
+            showButton.Click += showButton_Click;
             // 
             // clearButton
             // 
@@ -116,6 +117,7 @@
             clearButton.TabIndex = 1;
             clearButton.Text = "Clear the picture";
             clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // backgroundButton
             // 
@@ -126,7 +128,7 @@
             backgroundButton.TabIndex = 2;
             backgroundButton.Text = "Set the background color";
             backgroundButton.UseVisualStyleBackColor = true;
-            backgroundButton.Click += button3_Click;
+            backgroundButton.Click += backgroundButton_Click;
             // 
             // closeButton
             // 
@@ -137,7 +139,7 @@
             closeButton.TabIndex = 3;
             closeButton.Text = "Close";
             closeButton.UseVisualStyleBackColor = true;
-            closeButton.Click += button4_Click;
+            closeButton.Click += closeButton_Click;
             // 
             // openFileDialog1
             // 
@@ -167,7 +169,7 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private PictureBox pictureBox1;
-        private CheckBox checkBox1;
+        private CheckBox stretchCheckBox;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button showButton;
         private Button clearButton;
