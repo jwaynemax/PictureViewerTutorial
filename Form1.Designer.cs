@@ -1,6 +1,6 @@
 ﻿namespace PictureViewer
 {
-    partial class Form1
+    partial class pictureForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,50 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tableLayoutPanel1 = new TableLayoutPanel();
-            pictureBox1 = new PictureBox();
+            tabelLayoutPanel = new TableLayoutPanel();
+            pictureBox = new PictureBox();
             stretchCheckBox = new CheckBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            flowLayoutPanel = new FlowLayoutPanel();
             showButton = new Button();
             clearButton = new Button();
             backgroundButton = new Button();
             closeButton = new Button();
-            openFileDialog1 = new OpenFileDialog();
-            colorDialog1 = new ColorDialog();
-            tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
+            openFileDialog = new OpenFileDialog();
+            colorDialog = new ColorDialog();
+            tabelLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
+            flowLayoutPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tabelLayoutPanel
             // 
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85F));
-            tableLayoutPanel1.Controls.Add(pictureBox1, 0, 0);
-            tableLayoutPanel1.Controls.Add(stretchCheckBox, 0, 1);
-            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 1, 1);
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.Size = new Size(869, 607);
-            tableLayoutPanel1.TabIndex = 0;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            tabelLayoutPanel.ColumnCount = 2;
+            tabelLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            tabelLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85F));
+            tabelLayoutPanel.Controls.Add(pictureBox, 0, 0);
+            tabelLayoutPanel.Controls.Add(stretchCheckBox, 0, 1);
+            tabelLayoutPanel.Controls.Add(flowLayoutPanel, 1, 1);
+            tabelLayoutPanel.Dock = DockStyle.Fill;
+            tabelLayoutPanel.Location = new Point(0, 0);
+            tabelLayoutPanel.Name = "tabelLayoutPanel";
+            tabelLayoutPanel.RowCount = 2;
+            tabelLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
+            tabelLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tabelLayoutPanel.Size = new Size(869, 607);
+            tabelLayoutPanel.TabIndex = 0;
+            tabelLayoutPanel.Paint += tableLayoutPanel_Paint;
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            tableLayoutPanel1.SetColumnSpan(pictureBox1, 2);
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(863, 540);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox.BorderStyle = BorderStyle.Fixed3D;
+            tabelLayoutPanel.SetColumnSpan(pictureBox, 2);
+            pictureBox.Dock = DockStyle.Fill;
+            pictureBox.Location = new Point(3, 3);
+            pictureBox.Name = "pictureBox";
+            pictureBox.Size = new Size(863, 540);
+            pictureBox.TabIndex = 0;
+            pictureBox.TabStop = false;
+            pictureBox.Click += pictureBox_Click;
             // 
             // stretchCheckBox
             // 
@@ -84,18 +84,18 @@
             stretchCheckBox.UseVisualStyleBackColor = true;
             stretchCheckBox.CheckedChanged += stretchCheckBox_CheckedChanged;
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel
             // 
-            flowLayoutPanel1.Controls.Add(showButton);
-            flowLayoutPanel1.Controls.Add(clearButton);
-            flowLayoutPanel1.Controls.Add(backgroundButton);
-            flowLayoutPanel1.Controls.Add(closeButton);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
-            flowLayoutPanel1.Location = new Point(133, 549);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(733, 55);
-            flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel.Controls.Add(showButton);
+            flowLayoutPanel.Controls.Add(clearButton);
+            flowLayoutPanel.Controls.Add(backgroundButton);
+            flowLayoutPanel.Controls.Add(closeButton);
+            flowLayoutPanel.Dock = DockStyle.Fill;
+            flowLayoutPanel.FlowDirection = FlowDirection.RightToLeft;
+            flowLayoutPanel.Location = new Point(133, 549);
+            flowLayoutPanel.Name = "flowLayoutPanel";
+            flowLayoutPanel.Size = new Size(733, 55);
+            flowLayoutPanel.TabIndex = 2;
             // 
             // showButton
             // 
@@ -141,41 +141,41 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += closeButton_Click;
             // 
-            // openFileDialog1
+            // openFileDialog
             // 
-            openFileDialog1.FileName = "openFileDialog1";
-            openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*";
-            openFileDialog1.Title = "Select a picture file";
-            openFileDialog1.FileOk += openFileDialog1_FileOk;
+            openFileDialog.FileName = "openFileDialog1";
+            openFileDialog.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*";
+            openFileDialog.Title = "Select a picture file";
+            openFileDialog.FileOk += openFileDialog1_FileOk;
             // 
-            // Form1
+            // pictureForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(869, 607);
-            Controls.Add(tableLayoutPanel1);
-            Name = "Form1";
+            Controls.Add(tabelLayoutPanel);
+            Name = "pictureForm";
             Text = "Picture Viewer";
-            Load += Form1_Load;
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
+            Load += pictureForm_Load;
+            tabelLayoutPanel.ResumeLayout(false);
+            tabelLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
+            flowLayoutPanel.ResumeLayout(false);
+            flowLayoutPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private TableLayoutPanel tableLayoutPanel1;
-        private PictureBox pictureBox1;
+        private TableLayoutPanel tabelLayoutPanel;
+        private PictureBox pictureBox;
         private CheckBox stretchCheckBox;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flowLayoutPanel;
         private Button showButton;
         private Button clearButton;
         private Button backgroundButton;
         private Button closeButton;
-        private OpenFileDialog openFileDialog1;
-        private ColorDialog colorDialog1;
+        private OpenFileDialog openFileDialog;
+        private ColorDialog colorDialog;
     }
 }
