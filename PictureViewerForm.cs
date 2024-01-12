@@ -2,6 +2,10 @@ namespace PictureViewer
 {
     public partial class pictureForm : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="pictureForm"/> class.
+        /// Contains events for PictureViewerForms
+        /// </summary>
         public pictureForm()
         {
             InitializeComponent();
